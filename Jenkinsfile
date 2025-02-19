@@ -8,7 +8,7 @@ pipeline {
         PATH = "${JAVA_HOME}/bin:${MAVEN_HOME}/bin:${env.PATH}"
     }
     stages {
-        stage('Checkout') {             
+        stage('checkout') {             
             steps {
              //  sh "rm -rf clinic"
               // sh "git clone https://github.com/poojagowda-j/clinic.git"
