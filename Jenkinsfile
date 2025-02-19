@@ -8,6 +8,13 @@ pipeline {
                 sh "cd clinic"
             }
         }
+stage('installingjava') {
+            steps {
+            echo " installing java 17"
+            sh "sudo apt update"
+            sh "sudo apt install -y openjdk-17-jdk"
+            }
+        }
         stage('Set up Environment') {
             steps {
                 sh 'export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))'
