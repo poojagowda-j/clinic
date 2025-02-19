@@ -13,7 +13,7 @@ pipeline {
              //  sh "rm -rf clinic"
               // sh "git clone https://github.com/poojagowda-j/clinic.git"
 		// sh "cd clinic"
-		checkoutcode()		 
+		checkoutcode(clinic)		 
             }
         }
 	  
