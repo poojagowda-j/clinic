@@ -10,10 +10,10 @@ pipeline {
     stages {
         stage('checkout') {             
             steps {
-             sh "rm -rf clinic"
-             sh "git clone https://github.com/poojagowda-j/clinic.git"
-	      sh "cd clinic"
-		//checkoutcode('clinic')		 
+             //sh "rm -rf clinic"
+             //sh "git clone https://github.com/poojagowda-j/clinic.git"
+	     // sh "cd clinic"
+	    checkoutcode('clinic')		 
             }
         }
 	  
